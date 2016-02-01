@@ -1,0 +1,6 @@
+framework module CoreView {
+  umbrella header "CoreView-umbrella.h"
+
+  export *
+  module * { export * }
+}
