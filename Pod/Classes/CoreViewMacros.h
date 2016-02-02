@@ -40,7 +40,7 @@ CV_IMPLEMENT_SET_PLURAL_MODEL \
 _CV_modelObject = modelObject; \
 [self didChangeValueForKey:@"CV_modelObject"]; \
 if ([self respondsToSelector:@selector(didUpdateModel:)]) { \
-[self didUpdateModel:modelObject]; \
+[self performSelector:@selector(didUpdateModel:) withObject:modelObject]; \
 } \
 }
 
@@ -54,7 +54,7 @@ if ([self respondsToSelector:@selector(didUpdateModel:)]) { \
 _CV_modelObjects = modelObjects; \
 [self didChangeValueForKey:@"CV_modelObjects"]; \
 if ([self respondsToSelector:@selector(didUpdateModel:)]) { \
-[self didUpdateModel:modelObjects]; \
+[self performSelector:@selector(didUpdateModel:) withObject:modelObjects]; \
 } \
 }
 
