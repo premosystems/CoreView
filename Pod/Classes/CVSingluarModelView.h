@@ -10,10 +10,10 @@
 
 @protocol CVSingluarModelView <NSObject>
 
-@property (nonatomic,strong) id CV_modelObject;
+@property (nonatomic,strong) id cv_modelObject;
 
 @optional
 
-- (void)didUpdateModel:(id)modelObject;
+- (void)didUpdateModel:(id)model;
 
 @end

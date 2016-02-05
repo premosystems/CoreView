@@ -13,10 +13,10 @@
 /**
  *  An array of model objects.
  */
-@property (nonatomic,strong) NSArray* CV_modelObjects;
+@property (nonatomic,strong) NSArray* cv_modelObjects;
 
 @optional
 
-- (void)didUpdateModel:(id)modelObject;
+- (void)didUpdateModel:(id)model;
 
 @end

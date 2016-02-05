@@ -31,37 +31,39 @@ CV_IMPLEMENT_SET_PLURAL_MODEL \
 
 
 #define CV_SINGULAR_MODEL_INTERFACE \
-@property (nonatomic,strong) id CV_modelObject;
+@property (nonatomic,strong) id cv_modelObject;
 
 #define CV_IMPLEMENT_SET_SINGULAR_MODEL \
-@synthesize CV_modelObject = _CV_modelObject; \
-- (void)setCV_modelObject:(id)modelObject { \
-[self willChangeValueForKey:@"CV_modelObject"]; \
-_CV_modelObject = modelObject; \
-[self didChangeValueForKey:@"CV_modelObject"]; \
+@synthesize cv_modelObject = _cv_modelObject; \
+- (void)setCv_modelObject:(id)modelObject { \
+[self willChangeValueForKey:@"cv_modelObject"]; \
+_cv_modelObject = modelObject; \
+[self didChangeValueForKey:@"cv_modelObject"]; \
 if ([self respondsToSelector:@selector(didUpdateModel:)]) { \
 [self performSelector:@selector(didUpdateModel:) withObject:modelObject]; \
 } \
-}
+} \
+CV_IMPLEMENT_DID_UPDATE_MODEL
 
 #define CV_PLURAL_MODEL_INTERFACE \
-@property (nonatomic,strong) NSArray* CV_modelObjects;
+@property (nonatomic,strong) NSArray* cv_modelObjects;
 
 #define CV_IMPLEMENT_SET_PLURAL_MODEL \
-@synthesize CV_modelObjects = _CV_modelObjects; \
-- (void)setCV_modelObjects:(id)modelObjects { \
-[self willChangeValueForKey:@"CV_modelObjects"]; \
-_CV_modelObjects = modelObjects; \
-[self didChangeValueForKey:@"CV_modelObjects"]; \
+@synthesize cv_modelObjects = _cv_modelObjects; \
+- (void)setCv_modelObjects:(id)modelObjects { \
+[self willChangeValueForKey:@"cv_modelObject"]; \
+_cv_modelObjects = modelObjects; \
+[self didChangeValueForKey:@"cv_modelObject"]; \
 if ([self respondsToSelector:@selector(didUpdateModel:)]) { \
 [self performSelector:@selector(didUpdateModel:) withObject:modelObjects]; \
 } \
-}
-
-/*
-#define CV_IMPLEMENT_DID_UPDATE_MODEL \
-- (void)didUpdateModel:(id)modelObject { \
 } \
-*/
+CV_IMPLEMENT_DID_UPDATE_MODEL
+
+
+#define CV_IMPLEMENT_DID_UPDATE_MODEL \
+- (void)didUpdateModel:(id)model { \
+} \
+
 
 #endif /* CoreViewMacros_h */
