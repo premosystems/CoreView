@@ -65,5 +65,9 @@ CV_IMPLEMENT_DID_UPDATE_MODEL
 - (void)didUpdateModel:(id)model { \
 } \
 
+#define CV_STRONG_MODEL_ACCESSOR(__CLASS__) \
+- (__CLASS__*) cv_strongModel { \
+return self.cv_modelObject; \
+}
 
 #endif /* CoreViewMacros_h */
