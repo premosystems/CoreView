@@ -17,25 +17,18 @@
 
 // SINGULAR INTERFACES //
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularTableViewController, UITableViewController)
+CV_MODEL_VIEW_INTERFACE(CVSingularTableViewController, UITableViewController)
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularCollectionViewController, UICollectionViewController)
+CV_MODEL_VIEW_INTERFACE(CVSingularCollectionViewController, UICollectionViewController)
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularTableViewCell, UITableViewCell)
+CV_MODEL_VIEW_INTERFACE(CVSingularTableViewCell, UITableViewCell)
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularCollectionViewCell, UICollectionViewCell)
+CV_MODEL_VIEW_INTERFACE(CVSingularCollectionViewCell, UICollectionViewCell)
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularCollectionReusableView, UICollectionReusableView)
+CV_MODEL_VIEW_INTERFACE(CVSingularCollectionReusableView, UICollectionReusableView)
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularView, UIView)
+CV_MODEL_VIEW_INTERFACE(CVSingularView, UIView)
 
-CV_SINGULAR_VIEW_INTERFACE(CVSingularViewController, UIViewController)
+CV_MODEL_VIEW_INTERFACE(CVSingularViewController, UIViewController)
 
-// PLURAL INTERFACES //
-
-CV_PLURAL_VIEW_INTERFACE(CVPluralViewController, UIViewController)
-
-CV_PLURAL_VIEW_INTERFACE(CVPluralTableViewController, UITableViewController)
-
-CV_PLURAL_VIEW_INTERFACE(CVPluralCollectionViewController, UITableViewController)
 
