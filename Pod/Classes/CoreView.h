@@ -10,7 +10,7 @@
 #define CoreView_h
 
 #import "CoreViewMacros.h"
-#import "CVPluralModelView.h"
+
 #import "CVSingluarModelView.h"
 
 #import "CVConcreteViews.h"

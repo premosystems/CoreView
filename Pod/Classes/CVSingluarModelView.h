@@ -14,6 +14,6 @@
 
 @optional
 
-- (void)didUpdateModel:(id)model;
+- (void)cv_didUpdateModel:(id)model;
 
 @end
