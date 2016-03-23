@@ -28,14 +28,14 @@ CV_IMPLEMENT_SET_MODEL \
 [self willChangeValueForKey:@"cv_modelObject"]; \
 _cv_modelObject = modelObject; \
 [self didChangeValueForKey:@"cv_modelObject"]; \
-if ([self respondsToSelector:@selector(cv_didUpdateModel:)]) { \
-[self performSelector:@selector(cv_didUpdateModel:) withObject:modelObject]; \
+if ([self respondsToSelector:@selector(didUpdateModel:)]) { \
+[self performSelector:@selector(didUpdateModel:) withObject:modelObject]; \
 } \
 } \
 CV_IMPLEMENT_DID_UPDATE_MODEL
 
 #define CV_IMPLEMENT_DID_UPDATE_MODEL \
-- (void)cv_didUpdateModel:(id)model { \
+- (void)didUpdateModel:(id)model { \
 } \
 
 #define CV_STRONG_MODEL_ACCESSOR(__CLASS__) \

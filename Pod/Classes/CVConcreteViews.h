@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CoreViewMacros.h"
 #import "CVSingluarModelView.h"
-#import "CVPluralModelView.h"
 
 /*
  A collection of concrete base classes that an app can inherit from.
